@@ -13,9 +13,11 @@ import {
 } from './app.component';
 import { FirstComponent } from './first.component'; // Child component dependency
 import { SecondComponent } from './second.component'; // Child component dependency
+import { FourthComponent } from './fourth.component'; // Child component dependency
 import { FifthComponent } from './fifth.component'; // Child component dependency
 import {
   RouterOutletStubComponent,
+  FourthComponentStub,
   SixthComponentStub
 } from '../testing';
 
@@ -48,6 +50,7 @@ describe('App Component - testing suite', () => {
         AppComponent, // component to be tested
         FirstComponent, // child component dependency
         SecondComponent, // child component dependency
+        FourthComponentStub, // child component dependency
         FifthComponent, // child component dependency
         SixthComponentStub, // sixth component stub for selector <sixth-component>
         RouterOutletStubComponent, // router outlet stub for selector <router-outlet>

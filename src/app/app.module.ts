@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule } from '@angular/forms'; // used for reactive forms
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -10,6 +11,7 @@ import { InMemoryDataService }  from './in-memory-data/in-memory-data.service';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first.component'; // used for basic testing
 import { SecondComponent } from './second.component'; // shows some lifecycle change testing
+import { FourthComponent } from './fourth.component'; // demonstrates reactive forms
 
 // FifthComponent demonstrates router testing
 import { FifthComponent } from './fifth.component';
@@ -38,6 +40,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     HttpModule,
+    ReactiveFormsModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
     AppRoutingModule
   ],
@@ -45,6 +48,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     FirstComponent,
     SecondComponent,
+    FourthComponent,
     FifthComponent,
     RouteOneComponent,
     RouteTwoComponent,

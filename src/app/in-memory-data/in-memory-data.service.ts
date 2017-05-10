@@ -19,7 +19,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'apple',
                     'butter'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Apple Cake',
                 type: 'food',
@@ -30,7 +30,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'apple',
                     'cake'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Apple Chips',
                 type: 'snack',
@@ -41,7 +41,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'apple',
                     'chips'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Apple Cider',
                 type: 'drink',
@@ -53,7 +53,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'apple',
                     'cider'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Apple Crisp',
                 type: 'dessert',
@@ -64,7 +64,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'apple',
                     'crisp'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Apple Pie',
                 type: 'dessert',
@@ -75,7 +75,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'apple',
                     'pie'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Ajiaco',
                 type: 'soup',
@@ -87,7 +87,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'soup',
                     'Colombia'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Aloo gobi',
                 type: 'soup',
@@ -100,7 +100,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'turmeric',
                     'India'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'George Washington',
                 type: 'president',
@@ -108,7 +108,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 tags: [
                     'president'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'John Adams',
                 type: 'president',
@@ -117,7 +117,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'president',
                     'vice president'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Thomas Jefferson',
                 type: 'president',
@@ -126,7 +126,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'president',
                     'vice president'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Always Dreaming',
                 type: 'horse',
@@ -135,7 +135,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'race horse',
                     'Kentucky Derby'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Lookin At Lee',
                 type: 'horse',
@@ -144,7 +144,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'race horse',
                     'Kentucky Derby'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Battle of Midway',
                 type: 'horse',
@@ -153,7 +153,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'race horse',
                     'Kentucky Derby'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Classic Empire',
                 type: 'horse',
@@ -162,7 +162,7 @@ export class InMemoryDataService implements InMemoryDbService {
                     'race horse',
                     'Kentucky Derby'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Pratical Joke',
                 type: 'horse',
@@ -171,35 +171,35 @@ export class InMemoryDataService implements InMemoryDbService {
                     'race horse',
                     'Kentucky Derby'
                 ]
-            },{
+            }, {
                 id: this.i++,
                 name: 'Avatar',
                 type: 'movie',
                 cost: 425000000,
                 notes: 'Released 12/18/2009'
-            },{
+            }, {
                 id: this.i++,
                 name: 'Star Wars Episode VII: The Force Awakens',
                 type: 'movie',
                 cost: 306000000,
                 notes: 'Released 12/18/2015'
-            },{
+            }, {
                 id: this.i++,
                 name: 'Pirates of the Caribbean: At Worlds End',
                 type: 'movie',
                 cost: 300000000,
                 notes: 'Release 5/24/2007'
-            },{
+            }, {
                 id: this.i++,
                 name: 'Spectre',
                 type: 'movie',
                 cost: 300000000,
                 notes: 'The most expensive way to fall asleep.'
-            },{
+            }, {
                 id: this.i++,
                 name: 'Love',
                 type: 'emotion'
-            },{
+            }, {
                 id: this.i++,
                 name: 'Fear',
                 type: 'emotion'

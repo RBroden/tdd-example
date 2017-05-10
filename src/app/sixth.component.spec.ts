@@ -4,7 +4,7 @@ import {
     async
 } from '@angular/core/testing';
 import { DebugElement } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { SixthComponent } from './sixth.component';
 import {
@@ -13,6 +13,9 @@ import {
     ItemService,
     Item
 } from './_shared';
+
+import { Observable, BehaviorSubject } from 'rxjs/Rx';
+import 'rxjs/add/operator/toPromise';
 
 describe('SixthComponent - test suite', () => {
 
@@ -23,9 +26,48 @@ describe('SixthComponent - test suite', () => {
     let itemService: ItemService;
     let componentItemService: ItemService;
     let spy: jasmine.Spy;
+    const testItemsList = <Item[]>[
+        {
+            id: this.i++,
+            name: 'Apple Butter',
+            type: 'butter',
+            cost: 3.99,
+            notes: 'This is delicous!',
+            tags: [
+                'food',
+                'apple',
+                'butter'
+            ]
+        }, {
+            id: this.i++,
+            name: 'Apple Cake',
+            type: 'food',
+            cost: 9.99,
+            tags: [
+                'food',
+                'dessert',
+                'apple',
+                'cake'
+            ]
+        }, {
+            id: this.i++,
+            name: 'Apple Chips',
+            type: 'snack',
+            cost: 2.99,
+            tags: [
+                'food',
+                'snack',
+                'apple',
+                'chips'
+            ]
+        }
+    ];
 
     beforeEach( async( () => {
         TestBed.configureTestingModule({
+            imports: [
+                HttpModule
+            ],
             declarations: [
                 SixthComponent,
                 ListContainerComponent,
@@ -48,6 +90,10 @@ describe('SixthComponent - test suite', () => {
 
         // UserService from the root injector
         itemService = TestBed.get(ItemService);
+
+        // spies on the real item service initialize with a testItemsList
+        spy = spyOn(componentItemService, 'getItems')
+            .and.returnValue(Observable.of(testItemsList));
     });
 
     it ('SixthComponent should instantiate', () => {
@@ -55,10 +101,10 @@ describe('SixthComponent - test suite', () => {
             .toBe(true);
     });
 
-    it('items should be undefined upon instantiation', () => {
-        // let spy = spyOn(itemService, 'requestItems')
-        //     .and.returnValue(Promise.resolve(testQuote));
-    });
+    // it('should have items from itemService after lifecycle hook (async)', async(() => {
+    //     component.ngOnInit();
+    //     expect(component.items)
+    //         .toBe(testItemsList);
+    // }));
 
 });
-

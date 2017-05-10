@@ -1,0 +1,31 @@
+<div>
+    <form [formGroup]="itemForm" (ngSubmit)="onSubmit()" novalidate>
+        <div>
+            <label> Name:
+                <input type="text" formControlName="name">
+            </label>
+        </div>
+        <div>
+            <label> Type:
+                <input type="text" formControlName="type">
+            </label>
+        </div>
+        <div>
+            <label> Cost:
+                <input type="number" formControlName="cost">
+            </label>
+        </div>
+        <div>
+            <label> Notes:
+                <input type="text" formControlName="notes">
+            </label>
+        </div>
+        <button id="fourthComponentSubmit" type="submit">submit</button>
+    </form>
+    <div *ngIf="!!item">
+        <p id="itemNameDisplay">{{ item.name }}</p>
+        <p id="itemTypeDisplay">{{ item.type }}</p>
+        <p id="itemCostDisplay" *ngIf="!!item.cost">{{ item.cost }}</p>
+        <p id="itemNotesDisplay" *ngIf="!!item.notes">{{ item.notes }}</p>
+    </div>
+</div>
